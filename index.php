@@ -1,4 +1,8 @@
-<?php require 'lenguaje/Persona.php'; ?>
+<?php
+require_once 'lenguaje/Persona.php';
+require_once 'lenguaje/11-HerenciaPHP.php';
+?>
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -23,8 +27,25 @@ and open the template in the editor.
         echo 'Altura: ' . $persona->altura . '<br>';
         $persona->peso = 80;
         echo 'peso: ' . $persona->peso . '<br>';
+        ?>
 
-        // put your code here
+        <h3>Pesona Deportista</h3>
+        <?php
+        $deportista = new Deportista();
+        $deportista->genero = 'Femenino';
+        echo 'Genero: ' . $deportista->genero . '<br>';
+        $deportista->altura = 1.60;
+        echo 'Altura' . $deportista->altura . '<br>';
+        $deportista->peso = 55;
+        echo 'Peso' . $deportista->peso . '<br>';
+        $deportista->nombre = 'Yolanda';
+        echo 'Nombre: ' . $deportista->nombre . '<br>';
+        $deportista->pais = 'Argentina';
+        echo 'Pais: ' . $deportista->pais . '<br>';
+        $deportista->deporte = 'Natacion';
+        echo 'Deporte: ' . $deportista->deporte . '<br>';
+        echo $deportista->nadar() . '<br>';
+        echo $deportista->correr() . '<br>';
         ?>
     </body>
 </html>
