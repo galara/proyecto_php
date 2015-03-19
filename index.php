@@ -46,6 +46,9 @@ and open the template in the editor.
         echo 'Deporte: ' . $deportista->deporte . '<br>';
         echo $deportista->nadar() . '<br>';
         echo $deportista->correr() . '<br>';
+        echo "prueba de sublime";
+        echo "prueba de sublime2";
+
         ?>
     </body>
 </html>
