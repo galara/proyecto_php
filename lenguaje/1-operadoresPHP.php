@@ -22,3 +22,4 @@ $total = $numero1 - $numero2;
 echo "La resta total de $numero1 + $numero2 es igual a : <strong>$total</strong><br>";
 
 echo "prueba de sublime";
+echo "prueba de sublime2";
