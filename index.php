@@ -1,6 +1,16 @@
 <?php
 require_once 'lenguaje/Persona.php';
 require_once 'lenguaje/11-HerenciaPHP.php';
+
+session_start();
+if($_SESSION["login"]==true){
+    #echo "Bienvenido ".$_SESSION["nombre"];." ID : ".$_SESSION["id_usuario"];
+}else{
+    session_unset();
+    session_destroy();
+    header("location: seleccionar.php");
+}
+
 ?>
 
 <!DOCTYPE html>

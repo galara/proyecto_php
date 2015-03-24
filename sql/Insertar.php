@@ -9,8 +9,10 @@ Class Insertar{
 	public $genero;
 
 	public function insert(){
+		
 		$model = new Conexion();
 		$conexion = $model->conectar();
+
 		$sql = "INSERT INTO usuarios (nombre, email, password, genero)";
 		$sql.= "VALUES (:nombre, :email, :password, :genero)";
 		
